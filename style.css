@@ -1,5 +1,12 @@
 :root {
-  --font-krona-one: "Krona One", sans-serif;
+  --primary-color: #005ca9;
+  --secondary-color: #007bff;
+  --text-color: #333333;
+  --accent-color: #f8f9fa;
+  --bg-loisirs: #ff5733;
+  --bg-citoyens: #33c1ff;
+  --bg-municipalite: #28a745;
+  --bg-entreprises: #ffc107;
 
 }
 
@@ -8,7 +15,48 @@
   font-weight: 600;
   font-style: normal;
 }
-body {
-  font-family: var(--font-krona-one);
-  
+
+header {
+  background-color: var(--primary-color);
+  font-size: x-large;
+}
+
+.loisirs {
+  background-color: var(--bg-loisirs);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: left;
+  padding: 10px;
+  width: 600px;
+}
+
+.citoyens {
+  background-color: var(--bg-citoyens);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: left;
+  padding: 10px;
+  width: 700px;
+}
+
+.municipalite {
+  background-color: var(--bg-municipalite);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: left;
+  padding: 10px;
+  width: 800px;
+}
+
+.entreprises {
+  background-color: var(--bg-entreprises);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: left;
+  padding: 10px;
+  width: 900px;
 }
