@@ -60,3 +60,35 @@ header {
   padding: 10px;
   width: 900px;
 }
+
+/* Full-width page band shown under the header for each page type */
+.page-band {
+  width: 100%;
+  height: 48px;
+  display: block;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* Per-page color modifiers */
+.band-loisirs { background: var(--bg-loisirs); }
+.band-citoyens { background: var(--bg-citoyens); }
+.band-municipalite { background: var(--bg-municipalite); }
+.band-entreprises { background: var(--bg-entreprises); }
+
+/* Make the band thinner on small screens */
+@media (max-width: 576px) {
+  .page-band { height: 32px; }
+  .loisirs, .citoyens, .municipalite, .entreprises { width: auto; padding: 8px 10px; }
+}
+
+/* Utility: if body carries a page class, allow targeting entire page */
+body.page-loisirs { --page-accent: var(--bg-loisirs); }
+body.page-citoyens { --page-accent: var(--bg-citoyens); }
+body.page-municipalite { --page-accent: var(--bg-municipalite); }
+body.page-entreprises { --page-accent: var(--bg-entreprises); }
+
+.page-accent-top {
+  border-top: 6px solid var(--page-accent, transparent);
+}
+
+/* ensure file ends with newline */
