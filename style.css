@@ -2,7 +2,7 @@
   --primary-color: rgb(0, 92, 169);
   --secondary-color: #007bff;
   --text-color: #333333;
-  --accent-color: #f8f9fa;
+  --accent-color: rgb(248, 249, 250);
   --bg-loisirs: rgba(255, 88, 51, 0.941);
   --bg-citoyens: #33c1ff;
   --bg-municipalite: rgb(40, 167, 69);
@@ -13,21 +13,25 @@
 header {
   background-color: var(--primary-color);
   font-size: x-large;
-
 }
 
 .navbar-brand {
   margin-top: -2%;
+
 }
 .nav-link{ 
   text-shadow: #333333 0px 0.5px 0.5px;
   margin: auto;
   padding: 5px;
+ color: var(--accent-color);
 }
 
 .nav-link:hover {
   font-size: 1.2rem;
   transition: 0.3s;
+ }
+ .carousel-item {
+  height: 800px;
  }
 
 .loisirs {
