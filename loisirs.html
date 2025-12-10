@@ -14,36 +14,37 @@
 </head>
 
 <body class="page-loisirs page-accent-top">
-    <header>
-        <ul class="nav justify-content-end">
+    <header class="position relative">
+        <ul class=" navbar nav justify-content-end">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Active</a>
+                <a class="nav-link active" aria-current="page" href="#">Le causeur</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#"> Avis Public</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Nous joindre</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link ">Disabled</a>
-            </li>
+
             <li>
-                <i class="bi bi-facebook"></i>
+                <i class="bi bi-facebook m-3"></i>
             </li>
             <li>
                 <i class="bi bi-envelope m-3 "></i>
             </li>
         </ul>
-        <nav class="navbar navbar-expand-lg primary-color" id="navbar">
+
+        <nav class="navbar navbar-expand-lg primary-color">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarmenu"
+                    aria-controls="navbarmenu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbar">
-                    <img class="navbar-brand h-100 " src="Daveluyville-Images/logo-1.png" alt="" srcset="">
+
+                <!-- Logo -->
+                <img class="navbar-brand h-100 " src="Daveluyville-Images/logo-1.png" alt="logo de la ville">
+                <div class="collapse navbar-collapse" id="navbarmenu">
+
                     <ul class="navbar-nav ms-auto mb-0 mb-lg-0 ">
                         <li class="nav-item mx-4">
                             <a class="nav-link" href="#">Loisirs</a>
@@ -59,8 +60,9 @@
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control mx-3" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <input class="form-control mx-3" type="search" placeholder=" Que cherchez vous ?"
+                            aria-label="Search" />
+                        <button class="btn btn-outline-dark" type="submit">Recherche</button>
                     </form>
                 </div>
             </div>
@@ -69,12 +71,13 @@
 
     </header>
 
-    <body>
+  
         <main>
 
             <!-- Section Socioculturelle -->
+            <h2 class="mt-5 mb-4 display-2 w-25">Socioculturelle</h2>
             <section class="container my-5">
-                <h2 class="mb-4 display-1">Socioculturelle</h2>
+
                 <div class="row g-4 justify-content-center">
                     <div class="col-md-4 mb-4">
                         <div class="card h-100">
@@ -98,11 +101,10 @@
                                 <h5 class="card-title">Patinage artistique</h5>
                                 <p class="card-text">Le club est ouvert à tous, que tu sois enfant, ado ou adulte
                                     débutant. L’approche graduelle — de l’initiation (Patinage Plus) jusqu’au patinage
-                                    artistique plus sérieux (STAR).
-
-                                    <a
-                                        href="https://www.facebook.com/p/Club-de-Patinage-Artistique-du-Grand-Daveluyville-100068183245031/?locale=fr_CA"><i
-                                            class="bi bi-facebook"></i></a>
+                                    artistique plus sérieux (STAR).</p>
+                                <a
+                                    href="https://www.facebook.com/p/Club-de-Patinage-Artistique-du-Grand-Daveluyville-100068183245031/?locale=fr_CA"><i
+                                        class="bi bi-facebook"></i></a>
                             </div>
                         </div>
                     </div>
@@ -157,8 +159,9 @@
                     </div>
 
                     <div class="col-md-4 mb-4">
-                        <div class="card h-100">
-                            <img src="Daveluyville-Images/logo-osbl-generations.png" class="ratio h-75 w-100                                alt="Bibliothèque">
+                        <div class="card">
+                            <img src="Daveluyville-Images/logo-osbl-generations.png" class="ratio h-75 w-100"
+                                alt="Bibliothèque">
 
                             <div class="card-body">
                                 <h5 class="card-title">Le carrefour des générations</h5>
@@ -173,7 +176,148 @@
                         </div>
                     </div>
                 </div>
-                <h2 class="mb-4 display-1 text-center">Inscription</h2>
+
+
+
+            </section>
+            <hr class="mb-0">
+            <!-- Section Inscription -->
+            <h2 class="mb-4 display-1 text-center">Inscription</h2>
+            <section class=" container container-fluid ">
+
+                <div class="row m-5 g-4 justify-content-center">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                        <div class="card ">
+                            <div class="card-body">
+                                <h5 class="card-title">Portail - Voilà ! Centre Piché</h5>
+                                <p class="card-text">L'inscription et le paiement en ligne est désormais disponible
+                                    au
+                                    Centre sportif Piché! <br>
+                                    Que ce soit pour des cours, des locations de salles, un
+                                    abonnement au Centre de conditionnement physique Beaudoin, la location de glace,
+                                    tout peut désormais se faire sur la plateforme !
+                                </p>
+                                <ul class="nav">
+                                    <li class="nav-item">
+                                        <a href="https://daveluyville.appvoila.com/fr/">
+                                            <img src="Daveluyville-Images/logo-voila-davel.png"
+                                                alt="accès Portail Voilà"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card h-125">
+                            <div class="card-body">
+                                <h5 class="card-title">Accès loisirs -Victoriaville</h5>
+                                <p class="card-text">
+                                </p>Le programme Accès-Loisirs aide les citoyens de tous âges vivant en situation de
+                                faible revenu à s’inscrire gratuitement à des cours de sports et de loisirs offerts
+                                par
+                                la Ville de Victoriaville et ses partenaires.
+                                <ul class="nav">
+                                    <li class="nav-item mt-4 mb-3">
+                                        <a href="https://daveluyville.appvoila.com/fr/">
+                                            <img src="Daveluyville-Images/logo-accesloisirsvicto.png"
+                                                alt="accès Portail Voilà"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="mb-0">
+            <!-- Section Événements -->
+
+            <h2 class="mb-4 display-1 text-center">Événements</h2>
+            <section class="container container mt-5 mb-5">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div clss="col">
+                        <div class="card h-100 shadow-sm">
+                            <a href="https://baladegourmande.ca/"><img
+                                    src="Daveluyville-Images/evenement-ballade-gourmande.jpg"
+                                    class="card-img-top ratio h-60 w-50" alt="logo balade gourmande"></a>
+                            <div class="card-body">
+                                <h5 class="card-title">La ballade gourmande</h5>
+                                <p class="card-text">Daveluyville accueille chaque année plusieurs exposants de la
+                                    Balade gourmande, offrant une halte pleine de saveurs et de découvertes locales.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <a href="https://www.facebook.com/profile.php?id=100090587601231"><img
+                                    src="Daveluyville-Images/evenement-brasiervil.jpg"
+                                    class="card-img-top ratio h-60 w-50" alt="logo festival brasiervil"></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Brasiervil Atisans du feu</h5>
+                                <p class="card-text">Le Brasiervil est un festival festif et épicé, mêlant gastronomie,
+                                    animations, musique, spectacles et ambiance de fête.
+                                    Des dégustations et concours de sauces piquantes accompagnés de spectacles variés !
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <a href="https://www.facebook.com/lesjeudismicros/?locale=fr_CA"> <img
+                                    src="Daveluyville-Images/evenement-jeudismicro.jpg"
+                                    class="card-img-top ratio h-60 w-50" alt="été les jeudis micros"></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Les jeudis micros</h5>
+                                <p class="card-text">C’est une série de soirées estivales gratuites, mêlant petites
+                                    brasseries artisanales, musique live — souvent acoustique ou en hommage — et
+                                    food-trucks.Ça se déroule au parc extérieur Parc Beaudoin à Daveluyville.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <a href="https://www.facebook.com/CentreSportifPiche?locale=fr_CA"><img
+                                    src="Daveluyville-Images/evenement-brunch-2maires.jpg"
+                                    class="card-img-top ratio h-60 w-50" alt="Brunch annuelle des 2 maires"></a>
+                            <div class="card-body">
+                                <h5 class="card-title">Le brunch des 2 maires</h5>
+                                <p class="card-text">C’est un brunch communautaire organisé conjointement par les
+                                    municipalités de Daveluyville et de Maddington‑FallC’est aussi un geste de
+                                    solidarité : les participants sont invités à apporter des denrées non périssables,
+                                    qui seront remises à l’organisme local d’aide alimentaire (Partage alimentaire de
+                                    Daveluyville).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm">
+                            <a
+                                href="https://www.facebook.com/p/Festival-les-rendez-vous-country-de-Daveluyville-100088952137937/?locale=fr_FR"><img
+                                    src="Daveluyville-Images/evenement-country.jpg" class="card-img-top ratio h-60 w-50"
+                                    alt="festival country">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Festival les rendez-vous country Daveluyville</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 shadow-sm ">
+                            <a href="https://www.facebook.com/fetedavel/?locale=fr_CA"> <img
+                                    src="Daveluyville-Images/logo-comité loisirs.jpg"
+                                    class="card-img-top ratio h-60 w-50" alt="logo comité loisirs"></a>
+
+                            <div class="card-body">
+                                <h5 class="card-title">Loisirs en fête</h5>
+                                <p class="card-text">le Comité Loisirs en fête de Daveluyville organise toute l’année
+                                    tout un éventail d’activités pour rassembler la communauté et offrir des moments
+                                    festifs, sportifs ou familiaux à ses citoyens.Fête estivale,Carnaval d’hiver,Noël
+                                    des enfants de Daveluyville etc.. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </main>
 
@@ -221,13 +365,15 @@
                 <div class="col-md-5 offset-md-1 mb-3">
                     <ul class="nav flex-row">
                         <li class="nav-item mb-2">
-                            <img src="Daveluyville-Images/MatriceMRC.jpg" alt="">
+                            <img src="Daveluyville-Images/MatriceMRC.jpg" alt=" accès Matrice MRC">
                         </li>
                         <li class="nav-item  ms-5">
-                            <img src="Daveluyville-Images/victoetsaregion.png" alt="">
-
+                            <img src="Daveluyville-Images/victoetsaregion.png" alt="accès Victo et sa région">
                         </li>
-
+                        <li class="nav-item  ms-5">
+                            <a href="https://daveluyville.appvoila.com/fr/">
+                                <img src="Daveluyville-Images/logo-voila-davel.png" alt="accès Portail Voilà"></a>
+                        </li>
                     </ul>
 
                 </div>
