@@ -7,6 +7,7 @@
   --bg-municipalite: rgb(40, 167, 69);
   --bg-entreprises: rgb(255, 193, 7);
   --font-body: krona-one-regular, sans-serif;
+  --font-title: jetbrains-mono, monospace;
 }
 
 .krona-one-regular {
@@ -30,7 +31,10 @@ body {
   margin: 0;
   padding: 0;
 }
-
+.display-2 {
+  font-family: var(--font-title);
+  font-weight: 400;
+}
 header {
   position: relative;
   background-color: var(--header-bg);
