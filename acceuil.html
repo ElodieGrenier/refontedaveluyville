@@ -51,14 +51,14 @@
 
                     <li class="nav-item me-5 ">
                         <form class="d-flex gap-2">
-                            <input type="search" class="form-control" placeholder="Recherche…">
+                            <input type="search" class="form-control" aria-label="recherche" placeholder="Recherche…">
                             <button class="btn btn-primary">Trouver</button>
                         </form>
                     </li>
                 </ul>
                 <!--  BURGER  -->
                 <button class="d-lg-none btn text-white fs-3" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#menuMobile" aria-controls="menuMobile"> <i class="bi bi-list"></i>
+                    data-bs-target="#menuMobile" aria-controls="menuMobile"> #<i class="bi bi-list"></i>
 
                 </button>
                 <!-- Logo -->
@@ -142,17 +142,20 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img class="img-fluid w-100" src="Daveluyville-Images/hiver-davel.png" alt="">
-
+                        <svg aria-hidden="true" class="bd-placeholder-img" height="100%"
+                            preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                        </svg>
                         <div class="container">
                             <div class=" carousel-caption text-end">
-                                <h1 class="display-2">Infolettre</h1>
-                                <p class="display-6">
-                                    Inscrivez-vous à l'infolettre pour recevoir toutes les actualités de la ville.
-                                </p>
-                                <p>
-                                    <a class="btn btn-lg btn-primary"
-                                        href="https://www.ville.daveluyville.qc.ca/accueil">S'inscrire</a>
-                                </p>
+                                <h2 class="display-2">Infolettre</h1>
+                                    <p class="display-6">
+                                        Inscrivez-vous à l'infolettre pour recevoir toutes les actualités de la ville.
+                                    </p>
+                                    <p>
+                                        <a class="btn btn-lg btn-primary"
+                                            href="https://www.ville.daveluyville.qc.ca/accueil">S'inscrire</a>
+                                    </p>
                             </div>
                         </div>
                     </div>
@@ -166,7 +169,7 @@
                         </svg>
                         <div class="container">
                             <div class="carousel-caption">
-                                <h1 class="display-2">Vivre ici !</h1>
+                                <h2 class="display-2">Vivre ici !</h2>
                                 <p class="display-6">
                                     Une ville familliale en expansion, au coeur de la nature qui offre des espaces
                                     communautaires de qualité à ses citoyens.
@@ -219,10 +222,10 @@
         <div class="container">
             <div class=" row featuretted ">
                 <div class="col-md-7 order-md-2 d-flex flex-column align-items-center gap-4 mt-4 ">
-                    <h3 class=" display-3 fst-italic mt-4lh-1 text-center">
+                    <h4 class=" display-3 fst-italic mt-4lh-1 text-center">
                         Actualités
                         <span class="text-body-secondary">Décembre 2025</span>
-                    </h3>
+                    </h4>
                     <p class="lead text-center text-md-center">
                         La ville souhaite un joyeux temps des fêtes à tous les citoyens </p>
                     <div class="card mb-1" style="width: 25rem;">
@@ -351,13 +354,10 @@
 
             <div class="col-md-5 offset-md-1 mb-3">
                 <div class="d-flex align-items-center gap-3 justify-content-start footer-logos">
-                    <a href="http://">
+                    <a href="https://geo.victoriaville.ca/CarteMRCArthabaska/">
                         <img class="img-fluid" src="Daveluyville-Images/MatriceMRC.jpg" alt=" accès Matrice MRC">
                     </a>
-                    <a href="http://">
-                        <img class="img-fluid" src="Daveluyville-Images/victoetsaregion.png"
-                            alt="accès Victo et sa région">
-                    </a>
+
 
                     <a href="https://daveluyville.appvoila.com/fr/">
                         <img class="img-fluid" src="Daveluyville-Images/logo-voila-davel.png"
