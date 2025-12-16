@@ -15,69 +15,107 @@
 
 <body>
     <header>
-        <div class="border-bottom">
-            <div class="bg-loisirs">
-                <div class="  d-flex align-items-center justify-content-center justify-content-lg-center pt-3 ">
-                    <a href="acceuil.html"
-                        class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-                        <img class="navbar-brand " src="Daveluyville-Images/logo-villedavel.png"
-                            alt="logo de la ville-header">
-                    </a>
-                    <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-                        <li>
-                            <a href="loisirs.html" class="nav-link text-white ">
-                                <i class="bi bi-tree-fill bi d-block mx-auto mb-1 fs-2 text-center " width="24"
-                                    height="24" aria-hidden="true">
-                                </i>Socioculturelle</a>
-                        </li>
-                        <li>
-                            <a href="https://www.ville.daveluyville.qc.ca/demandes-de-permis"
-                                class="nav-link text-white">
-                                <i class="bi bi-houses-fill bi d-block mx-auto mb-1 fs-2 text-center " width="24"
-                                    height="24" aria-hidden="true">
+        <div class="border-bottom header-bg">
+            <div class=" d-flex align-items-center py-3">
 
-                                </i>
-                                Citoyens
-                            </a>
-                        </li>
-                        <li>
-                            <a href="municipalite.html" class="nav-link text-white">
-                                <i class="bi bi-bank bi d-block mx-auto mb-1 fs-2 text-center" width="24" height="24"
-                                    aria-hidden="true">
-                                    <use xlink:href="municipalite.html"></use>
-                                </i>
-                                Municipalité
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.ville.daveluyville.qc.ca/contact" class="nav-link text-white">
-                                <i class="bi bi-phone bi d-block mx-auto mb-1 fs-2 text-center" width="24" height="24"
-                                    aria-hidden="true">
+                <a href="acceuil.html" class="me-auto">
+                    <img class="ms-5" src="Daveluyville-Images/logo-ville-texte-blanc.png" alt="logo de la ville"
+                        style="height: 80px;">
+                </a>
+                <ul class="nav d-none d-lg-flex align-items-center gap-3">
+                    <li class="nav-item">
+                        <a href="loisirs.html" class="nav-link lien-header"> <i
+                                class="bi bi-tree-fill bi d-block mx-auto mb-1 fs-2 text-center " width="24" height="24"
+                                aria-hidden="true">
+                            </i>Socioculturelle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.ville.daveluyville.qc.ca/demandes-de-permis" class="nav-link lien-header">
+                            <i class="bi bi-houses-fill bi d-block mx-auto mb-1 fs-2 text-center" width="24" height="24"
+                                aria-hidden="true">
 
-                                </i>Nous joindre</a>
-                        </li>
-                        <div class="d-flex align-items-center gap-2 ms-3 p-4">
-                            <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
-                                <input type="search" class="form-control" placeholder="Que cherchez-vous ?"
-                                    aria-label="Search" />
-                            </form>
-                            <button type="button" class="btn btn-primary">Chercher</button>
-                        </div>
-                    </ul>
-                </div>
+                            </i>Citoyens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="municipalite.html" class="nav-link lien-header"> <i
+                                class="bi bi-bank bi d-block mx-auto mb-1 fs-2 text-center" width="24" height="24"
+                                aria-hidden="true">
+                                <use xlink:href="municipalite.html"></use>
+                            </i>Municipalité</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.ville.daveluyville.qc.ca/contact" class="nav-link lien-header"> <i
+                                class="bi bi-phone bi d-block mx-auto mb-1 fs-2 text-center" width="24" height="24"
+                                aria-hidden="true"></i>Nous joindre</a>
+                    </li>
+
+                    <li class="nav-item me-5 ">
+                        <form class="d-flex gap-2">
+                            <input type="search" class="form-control" aria-label="recherche" placeholder="Recherche…">
+                            <button class="btn btn-primary">Trouver</button>
+                        </form>
+                    </li>
+                </ul>
+                <!--  BURGER  -->
+                <button class="d-lg-none btn text-white fs-3" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#menuMobile" aria-controls="menuMobile">#<i class="bi bi-list"></i>
+                </button>
+                <!-- Logo -->
             </div>
         </div>
-        <div class="nav-scroller py-1 mb-3 border-bottom">
+
+        <!-- Responsive -->
+        <div class="offcanvas offcanvas-end  h-50 " tabindex="-1" id="menuMobile">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <ul class="nav flex-column gap-3">
+                    <li class="nav-item">
+                        <a href="https://www.ville.daveluyville.qc.ca/demandes-de-permis" class="nav-link text-dark ">
+                            <i class="bi bi-tree-fill bi  mx-auto mb-1 fs-2 text-center " width="24" height="24"
+                                aria-hidden="true">
+
+
+                            </i>Socioculturelle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.ville.daveluyville.qc.ca/demandes-de-permis" class="nav-link text-dark ">
+                            <i class="bi bi-houses-fill bi  mx-auto mb-1 fs-2 text-center " width="24" height="24"
+                                aria-hidden="true">
+
+
+                            </i>Citoyens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.ville.daveluyville.qc.ca/demandes-de-permis" class="nav-link text-dark ">
+                            <i class="bi bi-bank bi  mx-auto mb-1 fs-2 text-center " width="24" height="24"
+                                aria-hidden="true">
+
+
+                            </i>Municipalités</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.ville.daveluyville.qc.ca/demandes-de-permis" class="nav-link text-dark ">
+                            <i class="bi bi-phone bi  mx-auto mb-1 fs-2 text-center " width="24" height="24"
+                                aria-hidden="true">
+                            </i>Nous joindre</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class=" py-1 mb-3 border-bottom d-none d-lg-block">
             <nav class="container container nav nav-underline justify-content-between">
                 <a class="nav-item nav-link link-body-emphasis" href="vivreici.html">Vivre ici !</a>
                 <a class="nav-item nav-link link-body-emphasis"
                     href="https://www.ville.daveluyville.qc.ca/avis-publics">Avis Public</a>
-
                 <a class="nav-item nav-link link-body-emphasis"
                     href="https://www.ville.daveluyville.qc.ca/projets-de-reglements">Scéance du conseil</a>
                 <a class="nav-item nav-link link-body-emphasis"
                     href="https://www.ville.daveluyville.qc.ca/projets-de-reglements">Règlements et permis</a>
-
                 <a class="nav-item nav-link link-body-emphasis"
                     href="https://www.ville.daveluyville.qc.ca/parc-industriel">Entreprises</a>
                 <a class="nav-item nav-link link-body-emphasis"
@@ -102,14 +140,14 @@
                                 <p class="card-text">Chaque été, des équipes féminines et masculines se forment et
                                     s’affrontent avec celles des villages avoisinants</p>
                                 <a href="https://www.facebook.com/DekHockeyDaveluyville/">
-                                    <i class="bi bi-facebook"></i></a>
+                                    <i class="bi bi-facebook">Facebook</i></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-3">
                         <div class="card h-100 bg-body-loisirs">
                             <img src="Daveluyville-Images/logo-patinage artistique.jpg"
-                                class=" img-fluid mx-auto d-block card-logo" alt="Bibliothèque">
+                                class=" img-fluid mx-auto d-block card-logo" alt="logo cpa">
                             <div class="card-body">
                                 <h5 class="card-title">Patinage artistique</h5>
                                 <p class="card-text">Le club est ouvert à tous, que tu sois enfant, ado ou adulte
@@ -118,7 +156,7 @@
                                     artistique plus sérieux (STAR).</p>
                                 <a
                                     href="https://www.facebook.com/p/Club-de-Patinage-Artistique-du-Grand-Daveluyville-100068183245031/?locale=fr_CA"><i
-                                        class="bi bi-facebook"></i></a>
+                                        class="bi bi-facebook">Facebook</i></a>
                             </div>
                         </div>
                     </div>
@@ -127,7 +165,7 @@
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-3">
                         <div class="card h-100 bg-body-loisirs">
                             <img src="Daveluyville-Images/logo-campdejour.jpg"
-                                class="img-fluid mx-auto d-block card-logo" alt="Bibliothèque">
+                                class="img-fluid mx-auto d-block card-logo" alt="logo camp de jour">
                             <div class="card-body">
                                 <h5 class="card-title">Camp de jour</h5>
                                 <p class="card-text">Le camp s’adresse aux enfants de 4 à 12 ans.Il est disponible
@@ -136,7 +174,7 @@
                                     si un parent travaille à Daveluyville.</p>
 
                                 <a href="https://www.facebook.com/ballerapidedaveluyville/?locale=fr_FR"><i
-                                        class="bi bi-facebook"></i></a>
+                                        class="bi bi-facebook">Facebook</i></a>
                             </div>
                         </div>
                     </div>
@@ -153,8 +191,8 @@
                                     communauté,
                                     avec des équipes jeunesse qui évoluent à différents niveaux — pee-wee, bantam,
                                     midget</p>
-                                <a href="https://www.facebook.com/ballerapidedaveluyville/?locale=fr_FR"><i
-                                        class="bi bi-facebook"></i></a>
+                                <a href="https://www.facebook.com/HockeyMineurDaveluyville/?locale=fr_CA"><i
+                                        class="bi bi-facebook">Facebook</i></a>
                             </div>
                         </div>
                     </div>
@@ -163,7 +201,7 @@
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-3">
                         <div class="card h-100 bg-body-loisirs">
                             <img src="Daveluyville-Images/logo-ballerapide.png"
-                                class=" img-fluid mx-auto d-block card-logo" alt="Bibliothèque">
+                                class=" img-fluid mx-auto d-block card-logo " alt="Balle rapide">
                             <div class="card-body">
                                 <h5 class="card-title">Balle rapide</h5>
                                 <p class="card-text">La ville organise des inscriptions chaque printemps pour
@@ -171,7 +209,7 @@
                                     catégories selon l’âge : T-Ball (U-7), U-9, U-13 (atome/moustique), U-17
                                     (benjamin-cadet) et même une catégorie « Intermédiaire » pour les plus âgés.</p>
                                 <a href="https://www.facebook.com/ballerapidedaveluyville/?locale=fr_FR"><i
-                                        class="bi bi-facebook"></i></a>
+                                        class="bi bi-facebook">Facebook</i></a>
 
                             </div>
                         </div>
@@ -180,7 +218,7 @@
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 mb-3">
                         <div class="card h-100 bg-body-loisirs  ">
                             <img src="Daveluyville-Images/logo-osbl-generations.png"
-                                class="img-fluid mx-auto d-block card-logo" alt="Bibliothèque">
+                                class="img-fluid mx-auto d-block card-logo" alt="Carrefour des générations">
 
                             <div class="card-body">
                                 <h5 class="card-title">Le carrefour des générations</h5>
@@ -190,7 +228,7 @@
                                     personne
                                     dans le besoin.</p>
                                 <a href="https://www.facebook.com/carrefourdesgenerations?locale=fr_CA"><i
-                                        class="bi bi-facebook"></i></a>
+                                        class="bi bi-facebook">Facebook</i></a>
 
                             </div>
                         </div>
@@ -259,7 +297,7 @@
                                 <div class="card h-100 bg-body-loisirs">
                                     <a href="https://baladegourmande.ca/"><img
                                             src="Daveluyville-Images/evenement-ballade-gourmande.jpg"
-                                            class="card-img-top img-fluid rounded-circle"
+                                            class="card-img-top mt-3 img-fluid rounded-circle w-75  "
                                             alt="logo balade gourmande"></a>
                                     <div class="card-body">
                                         <h5 class="card-title">La ballade gourmande</h5>
@@ -275,7 +313,7 @@
                                 <div class="card h-100 bg-body-loisirs">
                                     <a href="https://www.facebook.com/profile.php?id=100090587601231"><img
                                             src="Daveluyville-Images/evenement-brasiervil.jpg"
-                                            class="card-img-top img-fluid rounded-circle"
+                                            class="card-img-top  mt-3 img-fluid rounded-circle w-75  "
                                             alt="logo festival brasiervil"></a>
                                     <div class="card-body">
                                         <h5 class="card-title">Brasiervil <br> Artisans du feu</h5>
@@ -291,7 +329,7 @@
                                 <div class="card h-100 bg-body-loisirs">
                                     <a href="https://www.facebook.com/lesjeudismicros/?locale=fr_CA"> <img
                                             src="Daveluyville-Images/evenement-jeudismicro.jpg"
-                                            class="card-img-top img-fluid  rounded-circle"
+                                            class="card-img-top img-fluid  rounded-circle w-75 "
                                             alt="été les jeudis micros"></a>
                                     <div class="card-body">
                                         <h5 class="card-title">Les jeudis micros</h5>
@@ -309,7 +347,7 @@
                                 <div class="card h-100 bg-body-loisirs">
                                     <a href="https://www.facebook.com/CentreSportifPiche?locale=fr_CA"><img
                                             src="Daveluyville-Images/evenement-brunch-2maires.jpg"
-                                            class="card-img-top img-fluid rounded-circle "
+                                            class="card-img-top mt-3 img-fluid rounded-circle w-75 "
                                             alt="Brunch annuelle des 2 maires"></a>
                                     <div class="card-body">
                                         <h5 class="card-title">Le brunch <br> des 2 maires</h5>
@@ -330,7 +368,7 @@
                                     <a
                                         href="https://www.facebook.com/p/Festival-les-rendez-vous-country-de-Daveluyville-100088952137937/?locale=fr_FR"><img
                                             src="Daveluyville-Images/evenement-country.jpg"
-                                            class="card-img-top img-fluid rounded-circle" alt="festival country">
+                                            class="card-img-top mt-3 img-fluid rounded-circle w-75" alt="festival country">
                                     </a>
                                     <div class="card-body">
                                         <h5 class="card-title">Festival <br> Les rendez-vous country Daveluyville</h5>
@@ -344,7 +382,7 @@
                                 <div class="card h-100 bg-body-loisirs ">
                                     <a href="https://www.facebook.com/fetedavel/?locale=fr_CA"> <img
                                             src="Daveluyville-Images/logo-comité loisirs.jpg"
-                                            class="card-img-top img-fluid rounded-circle" alt="logo comité loisirs"></a>
+                                            class="card-img-top img-fluid rounded-circle w-75 mt-3" alt="logo comité loisirs"></a>
 
                                     <div class="card-body">
                                         <h5 class="card-title">Loisirs en fête</h5>

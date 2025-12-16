@@ -14,73 +14,117 @@
 </head>
  
 <body>
-    <header class="municipalite">
-        <div class="border-bottom">
-            <div class="bg-municipalite">
-                <div class="d-flex align-items-center justify-content-center justify-content-lg-center pt-3 ">
-                    <a href="acceuil.html"
-                        class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-                        <img class="navbar-brand " src="Daveluyville-Images/logo-villedavel.png" alt="logo de la ville">
-                    </a>
-                    <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-                        <li>
-                            <a href="loisirs.html" class="nav-link text-white ">
-                                <i class="bi bi-tree-fill bi d-block mx-auto mb-1 fs-2 text-center " width="24" height="24"
-                                    aria-hidden="true">
-                                </i>Socioculturelle</a>
-                        </li>
-                        <li>
-                            <a href="https://www.ville.daveluyville.qc.ca/demandes-de-permis"
-                                class="nav-link text-white">
-                                <i class="bi bi-houses-fill bi d-block mx-auto mb-1 fs-2 text-center " width="24" height="24"
-                                    aria-hidden="true">
+      <header>
+        <div class="border-bottom header-bg">
+            <div class=" d-flex align-items-center py-3">
 
-                                </i>
-                                Citoyens
-                            </a>
-                        </li>
-                        <li>
-                            <a href="municipalite.html" class="nav-link text-white">
-                                <i class="bi bi-bank bi d-block mx-auto mb-1 fs-2 text-center" width="24" height="24"
-                                    aria-hidden="true">
-                                    <use xlink:href="municipalite.html"></use>
-                                </i>
-                                Municipalité
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.ville.daveluyville.qc.ca/contact" class="nav-link text-white">
-                                <i class="bi bi-phone bi d-block mx-auto mb-1 fs-2 text-center" width="24" height="24"
-                                    aria-hidden="true">
+                <a href="acceuil.html" class="me-auto">
+                    <img class="ms-5" src="Daveluyville-Images/logo-ville-texte-blanc.png" alt="logo de la ville"
+                        style="height: 80px;">
+                </a>
+                <ul class="nav d-none d-lg-flex align-items-center gap-3">
+                    <li class="nav-item">
+                        <a href="loisirs.html" class="nav-link lien-header"> <i
+                                class="bi bi-tree-fill bi d-block mx-auto mb-1 fs-2 text-center " width="24" height="24"
+                                aria-hidden="true">
+                            </i>Socioculturelle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.ville.daveluyville.qc.ca/demandes-de-permis" class="nav-link lien-header">
+                            <i class="bi bi-houses-fill bi d-block mx-auto mb-1 fs-2 text-center" width="24" height="24"
+                                aria-hidden="true">
 
-                                </i>Nous joindre</a>
-                        </li>
-                        <div class="d-flex align-items-center gap-2 ms-3 p-4">
-                            <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
-                                <input type="search" class="form-control" placeholder="Que cherchez-vous ?"
-                                    aria-label="Search" />
-                            </form>
-                            <button type="button" class="btn btn-primary">Chercher</button>
-                        </div>
-                    </ul>
-                </div>
+                            </i>Citoyens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="municipalite.html" class="nav-link lien-header"> <i
+                                class="bi bi-bank bi d-block mx-auto mb-1 fs-2 text-center" width="24" height="24"
+                                aria-hidden="true">
+                                <use xlink:href="municipalite.html"></use>
+                            </i>Municipalité</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.ville.daveluyville.qc.ca/contact" class="nav-link lien-header"> <i
+                                class="bi bi-phone bi d-block mx-auto mb-1 fs-2 text-center" width="24" height="24"
+                                aria-hidden="true"></i>Nous joindre</a>
+                    </li>
+
+                    <li class="nav-item me-5 ">
+                        <form class="d-flex gap-2">
+                            <input type="search" class="form-control" placeholder="Recherche…">
+                            <button class="btn btn-primary">Trouver</button>
+                        </form>
+                    </li>
+                </ul>
+                <!--  BURGER  -->
+                <button class="d-lg-none btn text-white fs-3" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#menuMobile" aria-controls="menuMobile"> <i class="bi bi-list"></i>
+
+                </button>
+                <!-- Logo -->
             </div>
         </div>
-        <div class="nav-scroller py-1 mb-3 border-bottom">
+
+        <!-- Responsive -->
+        <div class="offcanvas offcanvas-end  h-50 " tabindex="-1" id="menuMobile">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <ul class="nav flex-column gap-3">
+                    <li class="nav-item">
+                        <a href="https://www.ville.daveluyville.qc.ca/demandes-de-permis" class="nav-link text-dark ">
+                            <i class="bi bi-tree-fill bi  mx-auto mb-1 fs-2 text-center " width="24" height="24"
+                                aria-hidden="true">
+
+
+                            </i>Socioculturelle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.ville.daveluyville.qc.ca/demandes-de-permis" class="nav-link text-dark ">
+                            <i class="bi bi-houses-fill bi  mx-auto mb-1 fs-2 text-center " width="24" height="24"
+                                aria-hidden="true">
+
+
+                            </i>Citoyens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.ville.daveluyville.qc.ca/demandes-de-permis" class="nav-link text-dark ">
+                            <i class="bi bi-bank bi  mx-auto mb-1 fs-2 text-center " width="24" height="24"
+                                aria-hidden="true">
+
+
+                            </i>Municipalités</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.ville.daveluyville.qc.ca/demandes-de-permis" class="nav-link text-dark ">
+                            <i class="bi bi-phone bi  mx-auto mb-1 fs-2 text-center " width="24" height="24"
+                                aria-hidden="true">
+                            </i>Nous joindre</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class=" py-1 mb-3 border-bottom d-none d-lg-block">
             <nav class="container container nav nav-underline justify-content-between">
                 <a class="nav-item nav-link link-body-emphasis" href="vivreici.html">Vivre ici !</a>
-                <a class="nav-item nav-link link-body-emphasis" href="https://www.ville.daveluyville.qc.ca/avis-publics">Avis Public</a>
-
-                <a class="nav-item nav-link link-body-emphasis" href="https://www.ville.daveluyville.qc.ca/projets-de-reglements">Scéance du conseil</a>
-                <a class="nav-item nav-link link-body-emphasis" href="https://www.ville.daveluyville.qc.ca/projets-de-reglements">Règlements et permis</a>
-
-                <a class="nav-item nav-link link-body-emphasis" href="https://www.ville.daveluyville.qc.ca/parc-industriel">Entreprises</a>
-                <a class="nav-item nav-link link-body-emphasis" href="https://www.ville.daveluyville.qc.ca/le-causeur-en-ligne"> Journal Le causeur</a>
+                <a class="nav-item nav-link link-body-emphasis"
+                    href="https://www.ville.daveluyville.qc.ca/avis-publics">Avis Public</a>
+                <a class="nav-item nav-link link-body-emphasis"
+                    href="https://www.ville.daveluyville.qc.ca/projets-de-reglements">Scéance du conseil</a>
+                <a class="nav-item nav-link link-body-emphasis"
+                    href="https://www.ville.daveluyville.qc.ca/projets-de-reglements">Règlements et permis</a>
+                <a class="nav-item nav-link link-body-emphasis"
+                    href="https://www.ville.daveluyville.qc.ca/parc-industriel">Entreprises</a>
+                <a class="nav-item nav-link link-body-emphasis"
+                    href="https://www.ville.daveluyville.qc.ca/le-causeur-en-ligne"> Journal Le causeur</a>
             </nav>
         </div>
 
     </header>
-
     <main>
         <!-- Section 1 Municipalités -->
         <section class="container mt-5">
