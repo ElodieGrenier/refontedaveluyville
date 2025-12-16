@@ -1,140 +1,160 @@
-:root {
+  /*Base CSS*/
+  :root {
 
-  --text-color: #333333;
-  --accent-color: rgb(248, 249, 250);
-  --bg-loisirs: rgb(35, 60, 14);
-  --bg-citoyens: #33c1ff;
-  --bg-municipalite: rgb(205, 138, 87);
-  --bg-ville: rgb(7, 17, 83);
-  --font-body: krona-one-regular, sans-serif;
-  --font-title: jetbrains-mono, monospace;
-  --bg-btn-primary: #ff4005;
-  --btn-primary-bg-hover: #146f2b;
-}
+    --text-color: #333333;
+    --accent-color: rgb(248, 249, 250);
+    --bg-loisirs: rgb(35, 60, 14);
+    --bg-citoyens: #33c1ff;
+    --bg-municipalite: rgb(205, 138, 87);
+    --bg-ville: rgb(7, 17, 83);
+    --font-body: krona-one-regular, sans-serif;
+    --font-title: jetbrains-mono, monospace;
+    --bg-btn-primary: #ff4005;
+    --btn-primary-bg-hover: #146f2b;
+  }
 
-.krona-one-regular {
-  font-family: "Krona One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
-.jetbrains-mono {
-  font-family: "JetBrains Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 200 700;
-  font-style: normal;
-}
-
-body {
-  background-color: var(--accent-color);
-  color: var(--text-color);
-  font-family: var(--font-body);
-  margin: 0;
-  padding: 0;
-}
+  .krona-one-regular {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 
-.display-2 {
-  font-family: var(--font-title);
-  font-weight: 400;
-}
+  .jetbrains-mono {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 200 700;
+    font-style: normal;
+  }
+
+  /*Body*/
+  body {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 0;
+
+  }
+
+  /*Header*/
+  header .nav-link {
+    color: var(--accent-color);
+    position: relative;
+    transition: color 0.2s ease;
+  }
+
+  header .nav-link:hover {
+    color: var(--bg-citoyens);
+  }
+
+  .lien-header :hover {
+    color: var(--bg-citoyens);
+  }
 
 
-.header-bg{
-  background-color: var(--bg-ville);
-}
+  /*texte*/
+  .display-2 {
+    font-family: var(--font-title);
+    font-weight: 400;
+  }
 
-.btn-onglets-vivre { background-color: var(--bg-loisirs)
-}
-.btn-onglets-socio { background-color:var(--bg-loisirs);
-}
-.btn-onglets-cit{ background-color:var(--bg-citoyens);
-}
-.btn-onglets-muni { background-color: var(--bg-municipalite);
-}
+  /*Card*/
+  .card-body {
+    border-radius: 30px;
+  }
 
-header .nav-link {
-  color: var(--accent-color);
-  position: relative;
-  transition: color 0.2s ease;
-}
+  .bg-body-hotel-de-ville {
+    box-shadow: var(--bg-municipalite) 0px 4px 3px 1px, var(--bg-municipalite) 3px 3px 4px 4px;
+  }
 
-header .nav-link:hover {
-  color: var(--bg-citoyens);
-}
+  /*Accueil*/
+  .header-bg {
+    background-color: var(--bg-ville);
+  }
 
-.lien-header  :hover {
-color: var(--bg-citoyens);
+  .carousel-accueil .carousel-item {
+    height: 750px;
+  }
 
- }
+  .carousel-accueil .carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 750px;
+    object-fit: cover;
+    z-index: -1;
+  }
 
-.municipalite {
-  background-color: var(--bg-municipalite);
-}
+  .nav-scroller {
+    background-color: var(--accent-color);
+    border-bottom: solid 1px var(--header-bg);
+    font-weight: 200;
+  }
 
-.navbar-municipalite{
-  background-color: var(--bg-municipalite);
-}
+  .carousel-accueil .carousel-item {
+    height: 750px;
+  }
 
-.bg-loisirs {
-  background-color: var(--bg-loisirs);
-}
-.bg-unicipalite{
-  background-color: var(--bg-municipalite);
-}
-.card-body{
-  border-radius: 30px;
-}
+  .carousel-accueil .carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 750px;
+    object-fit: cover;
+    z-index: -1;
+  }
 
-.bg-body-hotel-de-ville {
-  box-shadow: var(--bg-municipalite) 0px 4px 3px 1px, var(--bg-municipalite) 3px 3px 4px 4px;
-}
+  /*BACKGROUND-HEADER DE TOUTES MES PAGES*/
+  .bg-municipalite {
+    background-color: var(--bg-municipalite);
+  }
 
-.bg-header-loisirs {
-  background-color: var(--bg-loisirs);
-}
+  .bg-header-loisirs {
+    background-color: var(--bg-loisirs);
+  }
 
-.bg-body-loisirs {
-  box-shadow: var(--bg-loisirs) 0px 4px 6px 1px, var(--bg-loisirs) 0px 2px 4px 1px;
-}
-.bg-ville{ 
-  background-color: var(--bg-ville);
-}
+  .bg-body-loisirs {
+    box-shadow: var(--bg-loisirs) 0px 4px 6px 1px, var(--bg-loisirs) 0px 2px 4px 1px;
+  }
 
-.carousel-accueil .carousel-item {
-  height: 750px;
-}
+  .bg-ville {
+    background-color: var(--bg-ville);
+  }
 
-.carousel-accueil .carousel-item img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 750px;
-  object-fit: cover;
-  z-index: -1;
-}
+  /*Socio*/
+  .bg-loisirs {
+    background-color: var(--bg-loisirs);
+  }
 
-.nav-scroller {
-  background-color: var(--accent-color);
-  border-bottom: solid 1px var(--header-bg);
-  font-weight: 200;
-}
+  .card-logo {
+    max-height: 90px;
+    object-fit: contain;
+    margin-top: 1rem;
+  }
 
-.card-logo {
-  max-height: 90px;
-  object-fit: contain;
-  margin-top: 1rem;
-}
+  /*Muni*/
 
-footer {
-  background-color: var(--text-color);
-  width: 100%;
-  font-weight: 700;
-}
+  .municipalite {
+    background-color: var(--bg-municipalite);
+  }
 
-.nav-item-footer a:hover {
-  font-style: italic;
-  text-decoration: underline;
-}
+  .navbar-municipalite {
+    background-color: var(--bg-municipalite);
+  }
+
+
+
+  /*Footer*/
+  footer {
+    background-color: var(--text-color);
+    width: 100%;
+    font-weight: 700;
+  }
+
+  .nav-item-footer a:hover {
+    font-style: italic;
+    text-decoration: underline;
+  }
