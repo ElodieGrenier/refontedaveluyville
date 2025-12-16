@@ -1,11 +1,11 @@
 :root {
-  --header-bg: #1a589b;
+
   --text-color: #333333;
   --accent-color: rgb(248, 249, 250);
-  --bg-loisirs: rgb(20, 121, 64);
+  --bg-loisirs: rgb(35, 60, 14);
   --bg-citoyens: #33c1ff;
-  --bg-municipalite: rgb(212, 109, 30);
-  --bg-entreprises: rgb(255, 193, 7);
+  --bg-municipalite: rgb(205, 138, 87);
+  --bg-ville: rgb(7, 17, 83);
   --font-body: krona-one-regular, sans-serif;
   --font-title: jetbrains-mono, monospace;
   --bg-btn-primary: #ff4005;
@@ -19,7 +19,7 @@
 }
 
 
-.jetbrains-mono{
+.jetbrains-mono {
   font-family: "JetBrains Mono", monospace;
   font-optical-sizing: auto;
   font-weight: 200 700;
@@ -33,37 +33,77 @@ body {
   margin: 0;
   padding: 0;
 }
+
+
 .display-2 {
   font-family: var(--font-title);
   font-weight: 400;
 }
-header {
-  position: relative;
-  background-color: var(--header-bg);
-}
-.municipalite {
-  background-color: var(--bg-municipalite);  }
 
+
+.header-bg{
+  background-color: var(--bg-ville);
+}
+
+.btn-onglets-vivre { background-color: var(--bg-loisirs)
+}
+.btn-onglets-socio { background-color:var(--bg-loisirs);
+}
+.btn-onglets-cit{ background-color:var(--bg-citoyens);
+}
+.btn-onglets-muni { background-color: var(--bg-municipalite);
+}
+
+header .nav-link {
+  color: var(--accent-color);
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+header .nav-link:hover {
+  color: var(--bg-citoyens);
+}
+
+.lien-header  :hover {
+color: var(--bg-citoyens);
+
+ }
+
+.municipalite {
+  background-color: var(--bg-municipalite);
+}
+
+.navbar-municipalite{
+  background-color: var(--bg-municipalite);
+}
+
+.bg-loisirs {
+  background-color: var(--bg-loisirs);
+}
+.bg-unicipalite{
+  background-color: var(--bg-municipalite);
+}
+.card-body{
+  border-radius: 30px;
+}
 
 .bg-body-hotel-de-ville {
-box-shadow: var(--bg-municipalite) 0px 4px 6px 1px, var(--bg-municipalite) 20px 5px 4px 4px;
+  box-shadow: var(--bg-municipalite) 0px 4px 3px 1px, var(--bg-municipalite) 3px 3px 4px 4px;
 }
+
 .bg-header-loisirs {
-background-color: var(--bg-loisirs);
+  background-color: var(--bg-loisirs);
 }
 
 .bg-body-loisirs {
-box-shadow: var(--bg-loisirs) 0px 4px 6px 1px, var(--bg-loisirs) 0px 2px 4px 1px; 
- }
- .navbar-brand {
-  position: absolute;
-  margin-top: 70px;
-  margin-left: 50px;
+  box-shadow: var(--bg-loisirs) 0px 4px 6px 1px, var(--bg-loisirs) 0px 2px 4px 1px;
+}
+.bg-ville{ 
+  background-color: var(--bg-ville);
 }
 
-
 .carousel-accueil .carousel-item {
-  height:750px;
+  height: 750px;
 }
 
 .carousel-accueil .carousel-item img {
@@ -76,16 +116,25 @@ box-shadow: var(--bg-loisirs) 0px 4px 6px 1px, var(--bg-loisirs) 0px 2px 4px 1px
   z-index: -1;
 }
 
-
 .nav-scroller {
   background-color: var(--accent-color);
   border-bottom: solid 1px var(--header-bg);
   font-weight: 200;
 }
 
-
-footer {
-  background-color: var(--header-bg);
-  width: 100%;
+.card-logo {
+  max-height: 90px;
+  object-fit: contain;
+  margin-top: 1rem;
 }
 
+footer {
+  background-color: var(--text-color);
+  width: 100%;
+  font-weight: 700;
+}
+
+.nav-item-footer a:hover {
+  font-style: italic;
+  text-decoration: underline;
+}

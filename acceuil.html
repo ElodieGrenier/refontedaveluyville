@@ -15,68 +15,108 @@
 
 <body>
     <header>
-        <div class="border-bottom">
-            <div class="header-bg">
-                <div class="d-flex align-items-center justify-content-center justify-content-lg-center pt-3 ">
-                    <a href="acceuil.html"
-                        class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-                        <img class="navbar-brand " src="Daveluyville-Images/logo-villedavel.png" alt="logo de la ville">
-                    </a>
-                    <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-                        <li>
-                            <a href="loisirs.html" class="nav-link text-white ">
-                                <i class="bi bi-tree-fill bi d-block mx-auto mb-1 fs-2 text-center " width="24"
-                                    height="24" aria-hidden="true">
-                                </i>Socioculturelle</a>
-                        </li>
-                        <li>
-                            <a href="https://www.ville.daveluyville.qc.ca/demandes-de-permis"
-                                class="nav-link text-white">
-                                <i class="bi bi-houses-fill bi d-block mx-auto mb-1 fs-2 text-center " width="24"
-                                    height="24" aria-hidden="true">
+        <div class="border-bottom header-bg">
+            <div class=" d-flex align-items-center py-3">
 
-                                </i>
-                                Citoyens
-                            </a>
-                        </li>
-                        <li>
-                            <a href="municipalite.html" class="nav-link text-white">
-                                <i class="bi bi-bank bi d-block mx-auto mb-1 fs-2 text-center" width="24" height="24"
-                                    aria-hidden="true">
-                                    <use xlink:href="municipalite.html"></use>
-                                </i>
-                                Municipalité
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.ville.daveluyville.qc.ca/contact" class="nav-link text-white">
-                                <i class="bi bi-phone bi d-block mx-auto mb-1 fs-2 text-center" width="24" height="24"
-                                    aria-hidden="true">
+                <a href="acceuil.html" class="me-auto">
+                    <img class="ms-5" src="Daveluyville-Images/logo-ville-texte-blanc.png" alt="logo de la ville"
+                        style="height: 80px;">
+                </a>
+                <ul class="nav d-none d-lg-flex align-items-center gap-3">
+                    <li class="nav-item">
+                        <a href="loisirs.html" class="nav-link lien-header"> <i
+                                class="bi bi-tree-fill bi d-block mx-auto mb-1 fs-2 text-center " width="24" height="24"
+                                aria-hidden="true">
+                            </i>Socioculturelle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.ville.daveluyville.qc.ca/demandes-de-permis" class="nav-link lien-header">
+                            <i class="bi bi-houses-fill bi d-block mx-auto mb-1 fs-2 text-center" width="24" height="24"
+                                aria-hidden="true">
 
-                                </i>Nous joindre</a>
-                        </li>
-                        <div class="d-flex align-items-center gap-2 ms-3 p-4">
-                            <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
-                                <input type="search" class="form-control" placeholder="Que cherchez-vous ?"
-                                    aria-label="Search" />
-                            </form>
-                            <button type="button" class="btn btn-primary">Chercher</button>
-                        </div>
-                    </ul>
-                </div>
+                            </i>Citoyens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="municipalite.html" class="nav-link lien-header"> <i
+                                class="bi bi-bank bi d-block mx-auto mb-1 fs-2 text-center" width="24" height="24"
+                                aria-hidden="true">
+                                <use xlink:href="municipalite.html"></use>
+                            </i>Municipalité</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.ville.daveluyville.qc.ca/contact" class="nav-link lien-header"> <i
+                                class="bi bi-phone bi d-block mx-auto mb-1 fs-2 text-center" width="24" height="24"
+                                aria-hidden="true"></i>Nous joindre</a>
+                    </li>
+
+                    <li class="nav-item me-5 ">
+                        <form class="d-flex gap-2">
+                            <input type="search" class="form-control" placeholder="Recherche…">
+                            <button class="btn btn-primary">Trouver</button>
+                        </form>
+                    </li>
+                </ul>
+                <!--  BURGER  -->
+                <button class="d-lg-none btn text-white fs-3" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#menuMobile" aria-controls="menuMobile"> <i class="bi bi-list"></i>
+
+                </button>
+                <!-- Logo -->
             </div>
         </div>
-        <div class="nav-scroller py-1 mb-3 border-bottom">
+
+        <!-- Responsive -->
+        <div class="offcanvas offcanvas-end " tabindex="-1" id="menuMobile">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+
+            <div class="offcanvas-body">
+                <ul class="nav  gap-3">
+                    <li class="nav-item">
+                        <a href="https://www.ville.daveluyville.qc.ca/demandes-de-permis" class="nav-link text-dark ">
+                            <i class="bi bi-houses-fill bi  mx-auto mb-1 fs-2 text-center " width="24" height="24"
+                                aria-hidden="true">
+
+
+                            </i>Socioculturelle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.ville.daveluyville.qc.ca/demandes-de-permis" class="nav-link text-dark ">
+                            <i class="bi bi-houses-fill bi  mx-auto mb-1 fs-2 text-center " width="24" height="24"
+                                aria-hidden="true">
+                    
+
+                    </i>Citoyens</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.ville.daveluyville.qc.ca/demandes-de-permis" class="nav-link text-dark ">
+                            <i class="bi bi-houses-fill bi  mx-auto mb-1 fs-2 text-center " width="24" height="24"
+                                aria-hidden="true">
+
+
+                            </i>Municipalitées</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.ville.daveluyville.qc.ca/demandes-de-permis" class="nav-link text-dark ">
+                            <i class="bi bi-houses-fill bi  mx-auto mb-1 fs-2 text-center " width="24" height="24"
+                                aria-hidden="true">
+                            </i>Nous joindre</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class=" py-1 mb-3 border-bottom d-none d-lg-block">
             <nav class="container container nav nav-underline justify-content-between">
                 <a class="nav-item nav-link link-body-emphasis" href="vivreici.html">Vivre ici !</a>
                 <a class="nav-item nav-link link-body-emphasis"
                     href="https://www.ville.daveluyville.qc.ca/avis-publics">Avis Public</a>
-
                 <a class="nav-item nav-link link-body-emphasis"
                     href="https://www.ville.daveluyville.qc.ca/projets-de-reglements">Scéance du conseil</a>
                 <a class="nav-item nav-link link-body-emphasis"
                     href="https://www.ville.daveluyville.qc.ca/projets-de-reglements">Règlements et permis</a>
-
                 <a class="nav-item nav-link link-body-emphasis"
                     href="https://www.ville.daveluyville.qc.ca/parc-industriel">Entreprises</a>
                 <a class="nav-item nav-link link-body-emphasis"
@@ -101,7 +141,7 @@
                 <!-- Carousel #1-->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="img fluid" src="Daveluyville-Images/hiver-davel.png" alt="">
+                        <img class="img-fluid w-100" src="Daveluyville-Images/hiver-davel.png" alt="">
 
                         <div class="container">
                             <div class=" carousel-caption text-end">
@@ -110,14 +150,16 @@
                                     Inscrivez-vous à l'infolettre pour recevoir toutes les actualités de la ville.
                                 </p>
                                 <p>
-                                    <a class="btn btn-lg btn-primary" href="#">S'inscrire</a>
+                                    <a class="btn btn-lg btn-primary"
+                                        href="https://www.ville.daveluyville.qc.ca/accueil">S'inscrire</a>
                                 </p>
                             </div>
                         </div>
                     </div>
                     <!-- Carousel #2-->
                     <div class="carousel-item">
-                        <img src="Daveluyville-Images/Hiver-sapin-parc.jpg" alt="">
+
+                        <img class="img-fluid w-100" src="Daveluyville-Images/Hiver-sapin-parc.jpg" alt="">
                         <svg aria-hidden="true" class="bd-placeholder-img" height="100%"
                             preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
                             <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
@@ -129,14 +171,14 @@
                                     Une ville familliale en expansion, au coeur de la nature qui offre des espaces
                                     communautaires de qualité à ses citoyens.
                                 </p>
-                                <p><a class="btn btn-lg btn-primary" href="#">Découvrir la ville</a></p>
+                                <p><a class="btn btn-lg btn-primary" href="vivreici.html">Découvrir la ville</a></p>
                             </div>
                         </div>
                     </div>
                     <!-- Carousel #3-->
                     <div class="carousel-item">
-                        <img src="Daveluyville-Images/daveluyville_1.jpg" alt="">
-                        <svg aria-hidden="true" class="bd-placeholder-img" height="100%"
+                        <img class="img-fluid w-100" src="Daveluyville-Images/daveluyville_1.jpg" alt="">
+                        <svg aria-hidden="true" class="bd-placeholder-img " height="100%"
                             preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
                             <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
                         </svg>
@@ -144,14 +186,17 @@
                             <div class="carousel-caption text-end">
                                 <h1 class="display-1">Parc industriel</h1>
                                 <p class="display-6">
-                                    Bienvenue aux entrepeneurs commerciale,découvrez les opportunités d'affaires et de
+                                    Bienvenue aux entrepeneurs commerciale,découvrez les opportunités d'affaires et
+                                    de
                                     développement offertes par notre
                                     parc
                                     industriel
                                     stratégique.
                                 </p>
                                 <p>
-                                    <a class="btn btn-lg btn-primary" href="#">Bottin des entreprises</a>
+                                    <a class="btn btn-lg btn-primary"
+                                        href="https://www.ville.daveluyville.qc.ca/aide-a-l-emploi-et-demarrage-d-entreprise">Bottin
+                                        des entreprises</a>
                                 </p>
                             </div>
                         </div>
@@ -172,17 +217,34 @@
 
         <!-- Actualités -->
         <div class="container">
-            <div class=" row featurette">
-                <div class="col-md-7 order-md-2">
+            <div class=" row featuretted ">
+                <div class="col-md-7 order-md-2 d-flex flex-column align-items-center gap-4 mt-4 ">
                     <h3 class=" display-3 fst-italic mt-4lh-1 text-center">
                         Actualités
                         <span class="text-body-secondary">Décembre 2025</span>
                     </h3>
-                    <p class="lead text-center">
+                    <p class="lead text-center text-md-center">
                         La ville souhaite un joyeux temps des fêtes à tous les citoyens </p>
+                    <div class="card mb-1" style="width: 25rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Journal Le causeur</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Décembre 2025</h6>
+                            <a href="#" class="card-link">Consulter</a>
+                            <a href="#" class="card-link">Archives</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 25rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Infolettre</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Inscrivez-vous</h6>
+                            <p class="card-text">pour rester informé.</p>
+                            <a href="#" class="card-link">S'inscrire</a>
+                            <a href="#" class="card-link">Consulter l'infolettre</a>
+                        </div>
+                    </div>
                 </div>
                 <!--Calendrier Canva -->
-                
+
                 <div class="col-md-5 order-md-1 p-3">
                     <div style="position: relative; width: 100%; height: 0; padding-top: 85.0000%;
  padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
@@ -208,164 +270,81 @@
         <div class="container">
             <h3 class="pb-2 border-bottom display-3">À venir</h3>
             <!-- Section facebook-->
-            <div>
-                <iframe
-                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffetedavel%2Fposts%2Fpfbid0Aa9AVQrnVxqBBEAUZdJXQkMVLDEGmWswm1t6Quv7Xg3Y92qPfZbtEgZK4a2HULjrl&show_text=true&width=500"
-                    width="300" height="374" style="border:none" scrolling="no" frameborder="0" allowfullscreen="true"
-                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                <iframe
-                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffetedavel%2Fposts%2Fpfbid0vWZRfuEoqpLf8xNhLXVjCq89sZqYxF97MYReAFNJRh9kqXfBdQ8XScKyX8VvoFjMl&show_text=true&width=500"
-                    width="300" height="374" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                    allowfullscreen="true"
-                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                <iframe
-                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FCentreSportifPiche%2Fposts%2Fpfbid02GrFHHtFEFdyKuZBpzNUWWokq6hDVKrris6froNcJFd7nn62N2gNmvXrsWXtdDv92l&show_text=true&width=500"
-                    width="300" height="374" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                    allowfullscreen="true"
-                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-                <iframe
-                    src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FCentreSportifPiche%2Fposts%2Fpfbid02z5WdBVvTqKPVo4ARctdPdGRBtDLHnbw31n52eV8GQyZbgfT6b6xiN2kFGGHg4K1bl&show_text=true&width=500"
-                    width="300" height="374" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
-                    allowfullscreen="true"
-                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            </div>
+            <div class="text-center mt-5 mb-5">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                        <iframe
+                            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffetedavel%2Fposts%2Fpfbid0Aa9AVQrnVxqBBEAUZdJXQkMVLDEGmWswm1t6Quv7Xg3Y92qPfZbtEgZK4a2HULjrl&show_text=true&width=500"
+                            width="300" height="374" style="border:none" scrolling="no" frameborder="0"
+                            allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                        <iframe
+                            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffetedavel%2Fposts%2Fpfbid0vWZRfuEoqpLf8xNhLXVjCq89sZqYxF97MYReAFNJRh9kqXfBdQ8XScKyX8VvoFjMl&show_text=true&width=500"
+                            width="300" height="374" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
-            <!-- Section FENÊTRE BOOTSTRAP-->
-            <div class="b-example-divider">
-                <div class="container px-4 py-5" id="custom-cards">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                        <iframe
+                            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FCentreSportifPiche%2Fposts%2Fpfbid02GrFHHtFEFdyKuZBpzNUWWokq6hDVKrris6froNcJFd7nn62N2gNmvXrsWXtdDv92l&show_text=true&width=500"
+                            width="300" height="374" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
 
-                    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-                        <div class="col">
-                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                                style="background-image: url(&quot;unsplash-photo-1.jpg&quot;)">
-                                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                                        Carnaval d'hiver
-                                    </h3>
-                                    <ul class="d-flex list-unstyled mt-auto">
-                                        <li class="me-auto">
-                                            <img src="https://github.com/twbs.png" alt="Bootstrap" width="32"
-                                                height="32" class="rounded-circle border border-white" />
-                                        </li>
-                                        <li class="d-flex align-items-center me-3">
-                                            <svg class="bi me-2" width="1em" height="1em" role="img"
-                                                aria-label="Location">
-                                                <use xlink:href="#geo-fill"></use>
-                                            </svg>
-                                            <small>Earth</small>
-                                        </li>
-                                        <li class="d-flex align-items-center">
-                                            <svg class="bi me-2" width="1em" height="1em" role="img"
-                                                aria-label="Duration">
-                                                <use xlink:href="#calendar3"></use>
-                                            </svg>
-                                            <small>3d</small>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                                style="background-image: url(&quot;unsplash-photo-2.jpg&quot;)">
-                                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                                        Much longer title that wraps to multiple lines
-                                    </h3>
-                                    <ul class="d-flex list-unstyled mt-auto">
-                                        <li class="me-auto">
-                                            <img src="https://github.com/twbs.png" alt="Bootstrap" width="32"
-                                                height="32" class="rounded-circle border border-white" />
-                                        </li>
-                                        <li class="d-flex align-items-center me-3">
-                                            <svg class="bi me-2" width="1em" height="1em" role="img"
-                                                aria-label="Location">
-                                                <use xlink:href="#geo-fill"></use>
-                                            </svg>
-                                            <small>Pakistan</small>
-                                        </li>
-                                        <li class="d-flex align-items-center">
-                                            <svg class="bi me-2" width="1em" height="1em" role="img"
-                                                aria-label="Duration">
-                                                <use xlink:href="#calendar3"></use>
-                                            </svg>
-                                            <small>4d</small>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                                style="background-image: url(&quot;unsplash-photo-3.jpg&quot;)">
-                                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
-                                        Another longer title belongs here
-                                    </h3>
-                                    <ul class="d-flex list-unstyled mt-auto">
-                                        <li class="me-auto">
-                                            <img src="https://github.com/twbs.png" alt="Bootstrap" width="32"
-                                                height="32" class="rounded-circle border border-white" />
-                                        </li>
-                                        <li class="d-flex align-items-center me-3">
-                                            <svg class="bi me-2" width="1em" height="1em" role="img"
-                                                aria-label="Location">
-                                                <use xlink:href="#geo-fill"></use>
-                                            </svg>
-                                            <small>California</small>
-                                        </li>
-                                        <li class="d-flex align-items-center">
-                                            <svg class="bi me-2" width="1em" height="1em" role="img"
-                                                aria-label="Duration">
-                                                <use xlink:href="#calendar3"></use>
-                                            </svg>
-                                            <small>5d</small>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-12 col-md-6 col-lg-3 mb-4">
+                        <iframe
+                            src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FCentreSportifPiche%2Fposts%2Fpfbid02z5WdBVvTqKPVo4ARctdPdGRBtDLHnbw31n52eV8GQyZbgfT6b6xiN2kFGGHg4K1bl&show_text=true&width=500"
+                            width="300" height="374" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                            allowfullscreen="true"
+                            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                     </div>
                 </div>
             </div>
+        </div>
     </main>
-    <footer class="py-4">
-        <div class="row m-4">
+    <footer class="py-4 text-white">
+        <div class="row m-4 text-white">
             <div class="col-6 col-md-2 mb-3 ">
 
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">Loisirs</a>
+                    <li class="nav-item mb-2 nav-item-footer">
+                        <a href="loisirs.html" class="nav-link p-0 text-white">Loisirs</a>
                     </li>
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">Citoyens</a>
+                    <li class="nav-item mb-2 nav-item-footer">
+                        <a href="https://www.ville.daveluyville.qc.ca/aide-a-l-emploi-et-demarrage-d-entreprise"
+                            class="nav-link p-0 text-white">Citoyens</a>
                     </li>
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">Municipalités</a>
+                    <li class="nav-item mb-2 nav-item-footer">
+                        <a href="municipalite.html" class="nav-link p-0 text-white">Municipalités</a>
                     </li>
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">Entreprises</a>
+                    <li class="nav-item mb-2 nav-item-footer ">
+                        <a href="https://www.ville.daveluyville.qc.ca/aide-a-l-emploi-et-demarrage-d-entreprise"
+                            class="nav-link p-0 text-white">Économies</a>
                     </li>
                 </ul>
             </div>
             <div class="col-6 col-md-2 mb-2">
 
                 <ul class="nav flex-column">
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">Application GESTRIO</a>
+                    <li class="nav-item mb-2 nav-item-footer">
+                        <a href="#" class="nav-link p-0 text-white">Application GESTRIO</a>
                     </li>
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">Programme vidange fosses septiques</a>
+                    <li class="nav-item mb-2 nav-item-footer">
+                        <a href="#" class="nav-link p-0 text-white">Programme fosses septiques</a>
                     </li>
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">Avis public</a>
+                    <li class="nav-item mb-2 nav-item-footer ">
+                        <a href="#" class="nav-link p-0 text-white">Avis public</a>
                     </li>
-                    <li class="nav-item mb-2">
-                        <a href="#" class="nav-link p-0 text-body-secondary">Offre d'emplois</a>
+                    <li class="nav-item mb-2 nav-item-footer ">
+                        <a href="#" class="nav-link p-0 text-white">Offre d'emplois</a>
                     </li>
-                    <li class="nav-item mb-2">
-                        <a href="https://histoire-du-quebec.ca/daveluyville/"
-                            class="nav-link p-0 text-body-secondary">Histoire de la ville</a>
+                    <li class="nav-item mb-2 nav-item-footer">
+                        <a href="https://histoire-du-quebec.ca/daveluyville/" class="nav-link p-0 text-white">Histoire
+                            de la ville</a>
                     </li>
                 </ul>
             </div>
@@ -373,29 +352,33 @@
             <div class="col-md-5 offset-md-1 mb-3">
                 <div class="d-flex align-items-center gap-3 justify-content-start footer-logos">
                     <a href="http://">
-                        <img src="Daveluyville-Images/MatriceMRC.jpg" alt=" accès Matrice MRC">
+                        <img class="img-fluid" src="Daveluyville-Images/MatriceMRC.jpg" alt=" accès Matrice MRC">
                     </a>
                     <a href="http://">
-                        <img src="Daveluyville-Images/victoetsaregion.png" alt="accès Victo et sa région">
+                        <img class="img-fluid" src="Daveluyville-Images/victoetsaregion.png"
+                            alt="accès Victo et sa région">
                     </a>
 
                     <a href="https://daveluyville.appvoila.com/fr/">
-                        <img src="Daveluyville-Images/logo-voila-davel.png" alt="accès Portail Voilà"></a>
+                        <img class="img-fluid" src="Daveluyville-Images/logo-voila-davel.png"
+                            alt="accès Portail Voilà"></a>
                 </div>
             </div>
         </div>
         <div class="d-flex flex-column flex-sm-row justify-content-between py-2 border-top">
             <p class="p-3">&copy; 2025 Company, Inc. All rights reserved.</p>
-
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-            integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-            crossorigin="anonymous"></script>
-    </footer>
 
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
