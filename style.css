@@ -4,12 +4,12 @@
     --text-color: #333333;
     --accent-color: rgb(248, 249, 250);
     --bg-loisirs: rgb(35, 60, 14);
-    --bg-hover: #0289ff;
+    --bg-hover: rgb(2, 137, 255);
     --bg-municipalite: rgb(210, 91, 0);
     --bg-ville: rgb(7, 17, 83);
     --font-body: krona-one-regular, sans-serif;
     --font-title: jetbrains-mono, monospace;
-   
+    --btn-primary-outline: rgb(35, 60, 14);
     --btn-primary-bg-hover: #146f2b;
   }
 
@@ -46,7 +46,7 @@
 
   header .nav-link:hover {
     color: var(--bg-hover);
- 
+
   }
 
   .lien-header :hover {
@@ -64,6 +64,10 @@
   .card-body {
     border-radius: 30px;
   }
+
+  /* bouton*/
+
+
 
   .bg-body-hotel-de-ville {
     box-shadow: var(--bg-municipalite) 0px 4px 3px 1px, var(--bg-municipalite) 3px 3px 4px 4px;
